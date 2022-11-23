@@ -1,9 +1,20 @@
-/* universal style */
+/* Universal Styles */
 
 html {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   }
+
+/* Header */
+
+header {
+  background-color: hsla(200, 55%, 60%, 1);
+  font-weight: 500;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Nav */
 
 nav {
   display: inline-block;
@@ -42,25 +53,11 @@ a:visited {
   background-color: red;
 }
 
-header {
-  background-color: gray;
-  font-weight: 500;
-  width: 100%;
-  padding: 10px;
-}
+/* Main */
 
-body {
+main {
   background-color: rgb(190, 182, 182);
   text-align: center;
-}
-
-footer {
-  position: fixed;
-  bottom: 0px;
-  text-align: center;
-  width: 100%;
-  padding: 25px 0px;
-  background-color: blue;
 }
 
 h1 {
@@ -85,4 +82,15 @@ a {
   padding: 20px;
   color: blue;
   text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  padding: 25px 0px;
+  background-color: blue;
 }
