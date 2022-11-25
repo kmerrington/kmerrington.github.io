@@ -105,7 +105,7 @@ footer {
   flex-shrink: 1; used to specify how much flex items shrink and in what proportions along the main axis.
   flex-basis: 800px; used to specify the initial size of an element styled with flex-grow and/or flex-shrink.
   */
-  flex: 1 1 800px; /* used to specify flex-grow, flex-shrink, and flex-basis in one declaration. */
+  flex: 1 1 800px; /* used to specify flex-grow, flex-shrink, and flex-basis in one declaration. The flex property can have two values to declare either the flex-grow and flex-shrink properties or the flex-grow and flex-basis properties. */
   /*
   flex-direction: column; used to specify the main and cross axes.
   flex-wrap: wrap; specifies that elements should shift along the cross axis if the flex container is not large enough.
@@ -113,6 +113,7 @@ footer {
   flex-flow: column wrap; /* used to specify flex-wrap and flex-direction in one declaration. */
   justify-content: center; /* used to space items along the main axis. */
   align-content: center; /* used to space rows along the cross axis. */
+  align-items: center; /* align-items is used to align items within a single row, whereas the align-content is used to align multiple rows. */;
 }
 
 .box {
