@@ -1,0 +1,95 @@
+/* Universal styling */
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    font-size: 1rem;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 7fr 2fr;
+    grid-template-areas: 
+      "header header"
+      "main main"
+      "footer footer";
+}
+
+
+/* Header (navigation bar) */
+
+header {
+    width: 100%;
+    grid-area: header;
+    background-color: green;
+    display: block;
+}
+
+.button {
+    background-color: aqua;
+    color: black;
+    padding: 2rem;
+    cursor: pointer;
+}
+  
+.button:link {
+    color: blue;
+    text-decoration: underline;
+}
+  
+.button:hover {
+    background-color: blueviolet;
+}
+  
+.button:active {
+    background-color: blueviolet;
+    color: white;
+}
+  
+#current-page .button {
+    background-color: red;
+}
+
+
+/* Main */
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 35% 65%;
+    grid-template-areas: 
+      ". img ."
+      ". section .";
+    text-align: center;
+    width: 100%;
+}
+
+main img {
+    grid-area: img;
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+main section {
+    grid-area: section;
+    display: block;
+    width: 60ch;
+    font-size: 1rem;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    grid-area: footer;
+    background-color: red;
+    align-self: center;
+    justify-self: center;
+}

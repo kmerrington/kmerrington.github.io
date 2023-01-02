@@ -9,6 +9,7 @@ html {
 
 header {
   background-color: hsla(200, 55%, 60%, 1);
+  font-size: 2rem;
   font-weight: 500;
   width: 100%;
   padding: 10px;
@@ -119,3 +120,30 @@ footer {
 .box {
   display: flex;
 }
+/* 
+
+Below represents a very common design pattern used to scale images and videos proportionally
+
+.container {
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+ 
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+The final declaration is the focus of the example below. It’s what scales the background image. The image will cover the entire background of the element, all while keeping the image in proportion. If the dimensions of the image exceed the dimensions of the container then only a portion of the image will display.
+
+body {
+  background-image: url('#');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+*/
